@@ -4,6 +4,23 @@
 
 Antarman is a production-grade Decision Intelligence system designed to help high-achievers maintain balance across the four Vedic pillars of life: **Dharma** (Purpose), **Artha** (Wealth), **Kama** (Relationships), and **Moksha** (Health).
 
+## 🎨 Showcase
+
+### Central Dashboard (Chakra)
+The core of Antarman is the **Chakra Score**, a real-time visualization of your overall life balance across all four pillars.
+
+![Antarman Homepage Dashboard](/assets/Homepage.png)
+
+### Life Event Tracking
+Log and categorize life events to see how they impact your Vedic pillars over time.
+
+![Antarman Events Tracking](/assets/Events.png)
+
+### Decision Intelligence (Event Detail)
+Drill down into specific events to understand the "Ripple Effect" and receive AI-driven nudges in your inner voice.
+
+![Antarman Event Detail Analysis](/assets/Event%20Details.png)
+
 ## 🏛️ System Architecture
 
 Our architecture is designed for **Scalability, Security, and Accessibility**.
