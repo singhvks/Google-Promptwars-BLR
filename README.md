@@ -1,4 +1,4 @@
-# अंतर्मन (Antarman) — Decision Intelligence "Life OS" 🕉️
+# अंतर्मन (Antarman) — Decision Intelligence "Life OS"
 
 > **"He who possesses a clear inner voice (Antarman) can navigate any storm."**
 
