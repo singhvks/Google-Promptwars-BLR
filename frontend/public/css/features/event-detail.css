@@ -1,0 +1,183 @@
+/* ─── Event Detail Feature Styles ──────────────────────────────────────────── */
+
+.event-detail-view {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 16px 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(to bottom, var(--bg) 70%, transparent);
+}
+
+.event-detail-content {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Event Title Card */
+.event-title-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+}
+
+.event-detail-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.event-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.event-detail-time {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Score Delta Display */
+.score-delta-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+
+.score-delta-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.score-delta-value {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.score-delta-value.pos { color: var(--success); }
+.score-delta-value.neg { color: var(--danger); }
+
+/* Pillar Impact Section */
+.impact-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+}
+
+.impact-section-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 14px;
+}
+
+/* Antarman Says */
+.antarman-says {
+  background: linear-gradient(135deg, rgba(255,184,0,0.06), rgba(255,184,0,0.02));
+  border: 1px solid rgba(255,184,0,0.2);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  display: flex;
+  gap: 12px;
+}
+
+.antarman-says-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.antarman-says-body {}
+
+.antarman-says-label {
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.antarman-says-text {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Decision Buttons */
+.decision-buttons {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}
+
+.decision-btn {
+  flex: 1;
+  padding: 13px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-primary);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.decision-btn:hover { transform: translateY(-2px); }
+
+.decision-btn-icon { font-size: 1.2rem; }
+
+.decision-btn.keep:hover {
+  border-color: var(--success);
+  color: var(--success);
+  background: rgba(63,185,80,0.08);
+}
+
+.decision-btn.reschedule:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.decision-btn.skip:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: rgba(255,77,77,0.08);
+}

@@ -1,0 +1,267 @@
+/* ─── Log Event Feature Styles ─────────────────────────────────────────────── */
+
+.log-event-view {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.log-event-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 16px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(to bottom, var(--bg) 70%, transparent);
+}
+
+.log-event-content {
+  padding: 0 16px 100px;
+  flex: 1;
+}
+
+/* Input Area */
+.log-input-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.log-input-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+}
+
+.log-textarea {
+  width: 100%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  color: var(--text-primary);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  resize: none;
+  min-height: 100px;
+  outline: none;
+  transition: border-color var(--transition);
+  line-height: 1.6;
+}
+
+.log-textarea:focus {
+  border-color: var(--accent);
+}
+
+.log-textarea::placeholder { color: var(--text-faint); }
+
+.log-submit-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 15px;
+  background: var(--accent);
+  color: #0D1117;
+  border: none;
+  border-radius: var(--radius);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  transition: all var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.log-submit-btn:hover {
+  box-shadow: 0 6px 24px rgba(255,184,0,0.4);
+  transform: translateY(-1px);
+}
+
+.log-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.log-submit-btn .btn-icon { font-size: 1rem; }
+
+/* Example suggestions */
+.log-examples {
+  margin-bottom: 16px;
+}
+
+.log-examples-title {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.log-example-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.log-example-chip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 5px 13px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.log-example-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Loading State */
+.log-analyzing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 36px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  animation: fadeUp 0.3s ease;
+}
+
+.analyzing-rings {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.analyzing-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.analyzing-ring:nth-child(1) {
+  border-top-color: var(--accent);
+  animation: spin 1s linear infinite;
+}
+
+.analyzing-ring:nth-child(2) {
+  inset: 8px;
+  border-top-color: var(--purpose);
+  animation: spin 0.8s linear infinite reverse;
+}
+
+.analyzing-text {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* Result Card */
+.log-result {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  animation: fadeUp 0.4s ease;
+}
+
+.log-result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.log-result-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.log-result-delta {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.log-result-delta.pos { color: var(--success); }
+.log-result-delta.neg { color: var(--danger); }
+
+.log-result-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.log-result-nudge {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-style: italic;
+  padding: 12px 14px;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid var(--accent);
+}
+
+.log-result-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.log-again-btn {
+  flex: 1;
+  padding: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.log-again-btn:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.log-done-btn {
+  flex: 2;
+  padding: 12px;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: #0D1117;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.log-done-btn:hover {
+  box-shadow: 0 4px 16px rgba(255,184,0,0.3);
+}

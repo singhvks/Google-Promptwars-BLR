@@ -1,0 +1,26 @@
+{
+  "skip gym for a week": {
+    "projected_scores": [62, 60, 58, 55, 52, 50, 48],
+    "warning": "Skipping 7 days of exercise causes compounding decline in your Health pillar (−38%). Your Antarman projects a 14-point Hero Score drop by day 7. The hidden cost: recovery takes 12–14 days of consistent effort to reverse. Your current score already reflects 3 missed sessions — this would push Health below 40."
+  },
+  "skip gym for 5 days": {
+    "projected_scores": [62, 61, 59, 56, 53, 51, 49],
+    "warning": "Five days without exercise creates a measurable cortisol imbalance and muscle adaptation loss. Your Antarman projects a 13-point Hero Score drop, primarily through the Health pillar. Given your 35% health weighting, this has outsized impact on your overall trajectory."
+  },
+  "take a new job": {
+    "projected_scores": [62, 59, 61, 64, 67, 70, 73],
+    "warning": "Career transitions follow a J-curve: initial stress (days 1-2) as Relationships and Wealth temporarily decrease, then a sustained upswing as Purpose and Wealth recover strongly. Your Antarman projects a net +11 Hero Score gain by day 7 — but only if the role aligns with your Balanced Achiever archetype."
+  },
+  "work on weekends": {
+    "projected_scores": [62, 63, 61, 58, 55, 53, 51],
+    "warning": "Weekend work creates a deceptive pattern: short-term Wealth gains (+4) are immediately offset by Relationships (−10) and Purpose (−6) erosion. Your Antarman projects an 11-point drop in 7 days. The math doesn't work — recovery time is productivity too."
+  },
+  "start meditating": {
+    "projected_scores": [62, 62, 63, 64, 66, 68, 70],
+    "warning": "Meditation compounds slowly but powerfully. Your Antarman projects a +8 Hero Score gain over 7 days, with the strongest impact on Purpose (+12) and Health (+8). The effect accelerates after day 3 — the neurological adaptation threshold. Starting today is the only optimal move."
+  },
+  "stop sleeping early": {
+    "projected_scores": [62, 60, 57, 54, 51, 49, 47],
+    "warning": "Sleep deprivation is the highest-leverage negative habit in your profile. Your Antarman projects a 15-point Hero Score decline over 7 days — the largest single-factor impact possible. Health, Purpose, and Wealth all degrade simultaneously. No productivity gain compensates for this trade."
+  }
+}

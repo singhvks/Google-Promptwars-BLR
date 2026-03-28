@@ -1,0 +1,11 @@
+{
+  "name": "Vikas",
+  "hero_archetype": "Balanced Achiever",
+  "hero_weights": {
+    "health": 0.35,
+    "wealth": 0.30,
+    "relationships": 0.20,
+    "purpose": 0.15
+  },
+  "current_hero_score": 62
+}

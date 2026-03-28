@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>अंतर्मन — Antarman</title>
+  <meta name="description" content="Your inner voice turned into intelligence. Antarman scores your life decisions across four core pillars: Health, Wealth, Relationships, and Purpose." />
+  <meta name="theme-color" content="#0D1117" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕉️</text></svg>" />
+
+  <!-- ─── Design System ──────────────────────────────────────────────────── -->
+  <link rel="stylesheet" href="css/core.css" />
+
+  <!-- ─── Feature Styles ────────────────────────────────────────────────── -->
+  <!-- ADD NEW FEATURE STYLES HERE -->
+  <link rel="stylesheet" href="css/features/dashboard.css" />
+  <link rel="stylesheet" href="css/features/event-detail.css" />
+  <link rel="stylesheet" href="css/features/whatif.css" />
+  <link rel="stylesheet" href="css/features/log-event.css" />
+</head>
+<body>
+
+  <!-- View root: all views are rendered inside here -->
+  <div id="view-root">
+    <div class="loading-screen">
+      <div class="hero-score-glow" style="position:absolute;width:200px;height:200px;top:50%;left:50%;transform:translate(-50%,-50%)"></div>
+      <div class="loading-ring"></div>
+      <div class="loading-text">अंतर्मन</div>
+    </div>
+  </div>
+
+  <!-- ─── Core Framework (must be first) ────────────────────────────────── -->
+  <script src="js/core.js"></script>
+
+  <!-- ─── Feature Modules ───────────────────────────────────────────────── -->
+  <!-- ADD NEW FEATURE SCRIPTS HERE -->
+  <script src="js/features/dashboard.js"></script>
+  <script src="js/features/event-detail.js"></script>
+  <script src="js/features/whatif.js"></script>
+  <script src="js/features/log-event.js"></script>
+
+</body>
+</html>

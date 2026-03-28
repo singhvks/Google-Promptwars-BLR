@@ -1,0 +1,26 @@
+{
+  "moksha": {
+    "score": 45,
+    "trend": "down",
+    "insight": "Skipped gym 3x this week",
+    "trend_7d": [58, 54, 51, 50, 48, 46, 45]
+  },
+  "artha": {
+    "score": 78,
+    "trend": "up",
+    "insight": "Closed major client deal",
+    "trend_7d": [65, 68, 70, 72, 74, 76, 78]
+  },
+  "kama": {
+    "score": 55,
+    "trend": "stable",
+    "insight": "Missed family dinner twice",
+    "trend_7d": [60, 58, 57, 56, 56, 55, 55]
+  },
+  "dharma": {
+    "score": 71,
+    "trend": "up",
+    "insight": "Completed a key learning goal",
+    "trend_7d": [62, 64, 66, 68, 69, 70, 71]
+  }
+}

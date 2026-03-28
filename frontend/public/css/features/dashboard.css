@@ -1,0 +1,97 @@
+/* ─── Dashboard Feature Styles ─────────────────────────────────────────────── */
+
+.dashboard-view {
+  min-height: 100vh;
+}
+
+/* Hero Score Section */
+.hero-score-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px 20px;
+  position: relative;
+}
+
+.hero-score-ring-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-score-glow {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,184,0,0.2) 0%, transparent 70%);
+  pointer-events: none;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.1); }
+}
+
+.hero-score-label {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.hero-archetype {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+/* Dashboard header override */
+.dashboard-view .app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding-bottom: 8px;
+}
+
+/* Events Section */
+.events-section {
+  margin-top: 16px;
+}
+
+.events-list {
+  margin-bottom: 8px;
+}
+
+/* Upcoming tag on event items */
+.event-item.upcoming {
+  border-color: rgba(255,184,0,0.2);
+}
+
+.event-item.upcoming .event-title {
+  color: var(--accent);
+}
+
+/* Hero score delta badge */
+.hero-delta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-top: 6px;
+}
+
+.hero-delta-badge.pos {
+  background: rgba(63,185,80,0.15);
+  color: var(--success);
+}
+
+.hero-delta-badge.neg {
+  background: rgba(255,77,77,0.15);
+  color: var(--danger);
+}
